@@ -2,7 +2,6 @@
 
 ### Integrantes
 Jorge Luiz da Silva - @jlsilva01<br>
-Integrante 2 - conta github<br>
 Integrante 3 - conta github<br>
 ...
 
