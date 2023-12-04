@@ -162,3 +162,65 @@ INSERT INTO pagamento (idcomanda, valor_pago, datahora_pagamento) VALUES
 (10, 110.50, '2023-11-30T14:45:00');
 select *from pagamento
 
+TABELA COMANDA
+-- 1
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 12:00:00', 1, 101);
+
+-- 2
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 12:30:00', 2, 102);
+
+-- 3
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 13:00:00', 3, 103);
+
+-- 4
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 13:30:00', 4, 104);
+
+-- 5
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 14:00:00', 5, 105);
+
+-- 6
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 14:30:00', 6, 106);
+
+-- 7
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 15:00:00', 7, 107);
+
+-- 8
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 15:30:00', 8, 108);
+
+-- 9
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 16:00:00', 9, 109);
+
+-- 10
+INSERT INTO comanda (datahora_entrada, idmesa, idcliente) VALUES ('2023-12-04 16:30:00', 10, 110);
+
+INSERT PEDIDO
+-- 1
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (1, 101, 2);
+
+-- 2
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (1, 102, 1);
+
+-- 3
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (2, 103, 3);
+
+-- 4
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (3, 104, 1);
+
+-- 5
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (3, 105, 2);
+
+-- 6 (Repetição do Pedido 1)
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (1, 101, 2);
+
+-- 7
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (4, 106, 1);
+
+-- 8
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (5, 107, 2);
+
+-- 9 (Repetição do Pedido 3)
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (2, 103, 3);
+
+-- 10
+INSERT INTO pedidos (idcomanda, idcardapio, qtde) VALUES (6, 108, 1);
+
